@@ -5,3 +5,4 @@ const pattern = /\\x1b\[\d{1,2}m/;
 
 console.log(regexSplit(str, pattern));
 console.log(regexSplit(str, pattern, { includeMatch: true }));
+console.log(regexSplit(str, pattern, { includeMatch: true, trim: true }));

@@ -4,9 +4,12 @@
  * @param {RegExp} pattern
  * @param {Object} options
  * @param {Boolean} options.includeMatch
+ * @param {Boolean} options.trim
+ * @param {Boolean} options.trimStart
+ * @param {Boolean} options.trimEnd
  * @returns {string[]}
  */
-function regexSplit(str, pattern, { includeMatch = false } = {}) {
+function regexSplit(str, pattern, { includeMatch = false, trim, trimStart, trimEnd } = {}) {
 	const returnValue = [];
 
 	let match;
@@ -25,11 +28,11 @@ function regexSplit(str, pattern, { includeMatch = false } = {}) {
 	} while (match);
 
 	if (returnValue.length > 1) {
-		if (returnValue[0] === '') {
+		if (returnValue[0] === '' && (trim || trimStart)) {
 			returnValue.shift();
 		}
 
-		if (returnValue[returnValue.length - 1] === '') {
+		if (returnValue[returnValue.length - 1] === '' && (trim || trimEnd)) {
 			returnValue.pop();
 		}
 	}
