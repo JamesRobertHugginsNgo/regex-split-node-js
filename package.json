@@ -1,6 +1,6 @@
 {
-  "name": "regex-split-node-js",
-  "version": "1.0.0",
+  "name": "regex-split-nodejs",
+  "version": "2.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -8,13 +8,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JamesRobertHugginsNgo/regex-split-node-js.git"
+    "url": "git+https://github.com/JamesRobertHugginsNgo/regex-split-nodejs.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/JamesRobertHugginsNgo/regex-split-node-js/issues"
+    "url": "https://github.com/JamesRobertHugginsNgo/regex-split-nodejs/issues"
   },
-  "homepage": "https://github.com/JamesRobertHugginsNgo/regex-split-node-js#readme"
+  "homepage": "https://github.com/JamesRobertHugginsNgo/regex-split-nodejs#readme"
 }
